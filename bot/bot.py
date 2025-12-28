@@ -1,8 +1,8 @@
 import asyncio
-from config import TOKEN
+from bot.config import TOKEN
 from aiogram import Bot, Dispatcher
-from handlers import router as handlers_router
-from keyboards import router as keyboards_router
+from bot.handlers import router as handlers_router
+from bot.keyboards import router as keyboards_router
 from database.models import create_tables
 
 async def main():
